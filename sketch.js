@@ -76,7 +76,6 @@ if (keyDown("space") && monkey.y >=500){
 }
 
     monkey.velocityY = monkey.velocityY + 0.8;
-  monkey.debug=true;
 
 if (monkey.isTouching(FoodGroup)){
     FoodGroup.destroyEach(); 
@@ -129,7 +128,6 @@ rock.scale=0.2;
 rock.lifetime=150;
 rock.velocityX=-6;
 rock.setCollider("circle",10,60,200);
-rock.debug=true;
 obstacleGroup.add(rock);
   }
 }
